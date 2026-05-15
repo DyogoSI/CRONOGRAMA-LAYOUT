@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronograma Operacional do Cliente</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="widget-cronograma">
+        <div class="crono-wrapper">
+            <div class="crono-container">
+
+                <header class="crono-header">
+                    <div class="header-banner">
+                        <img src="images/IRHO-BRANCO.png" alt="Logo" class="banner-logo" onerror="this.style.display='none'">
+                        <h1>CRONOGRAMA OPERACIONAL</h1>
+                    </div>
+                </header>
+
+                <div class="main-content">
+
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="width: 5%;">ETAPA</th>
+                                    <th style="width: 25%;">ATIVIDADE DA OPERAÇÃO</th>
+                                    <th style="width: 30%;">DESCRIÇÃO</th>
+                                    <th style="width: 10%;">INÍCIO</th>
+                                    <th style="width: 10%;">TÉRMINO</th>
+                                    <th style="width: 10%;">DURAÇÃO</th>
+                                    <th style="width: 10%;">STATUS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="step-1">
+                                    <td data-label="ETAPA"><span class="step-number">1</span></td>
+                                    <td data-label="ATIVIDADE DA OPERAÇÃO">
+                                        <div class="process-col c1"><i class="fa-regular fa-handshake"></i> KICK-OFF E<br>ALINHAMENTO</div>
+                                    </td>
+                                    <td data-label="DESCRIÇÃO" class="desc-col">Reunião inicial com o cliente para definição de metas.</td>
+                                    <td data-label="INÍCIO" class="date-col">03/06/2024</td>
+                                    <td data-label="TÉRMINO" class="date-col">07/06/2024</td>
+                                    <td data-label="DURAÇÃO">5 dias</td>
+                                    <td data-label="STATUS">
+                                        <div class="status"><span class="dot green"></span> Concluído</div>
+                                    </td>
+                                </tr>
+                                <tr id="step-2">
+                                    <td data-label="ETAPA"><span class="step-number">2</span></td>
+                                    <td data-label="ATIVIDADE DA OPERAÇÃO">
+                                        <div class="process-col c2"><i class="fa-solid fa-sitemap"></i> MAPEAMENTO DE<br>PROCESSOS</div>
+                                    </td>
+                                    <td data-label="DESCRIÇÃO" class="desc-col">Levantamento detalhado das operações e fluxos de trabalho.</td>
+                                    <td data-label="INÍCIO" class="date-col">10/06/2024</td>
+                                    <td data-label="TÉRMINO" class="date-col">14/06/2024</td>
+                                    <td data-label="DURAÇÃO">5 dias</td>
+                                    <td data-label="STATUS">
+                                        <div class="status"><span class="dot green"></span> Concluído</div>
+                                    </td>
+                                </tr>
+                                <tr id="step-3">
+                                    <td data-label="ETAPA"><span class="step-number">3</span></td>
+                                    <td data-label="ATIVIDADE DA OPERAÇÃO">
+                                        <div class="process-col c3"><i class="fa-solid fa-laptop-code"></i> CONFIGURAÇÃO DE<br>SISTEMAS</div>
+                                    </td>
+                                    <td data-label="DESCRIÇÃO" class="desc-col">Setup de acessos, parametrização e integrações.</td>
+                                    <td data-label="INÍCIO" class="date-col">17/06/2024</td>
+                                    <td data-label="TÉRMINO" class="date-col">28/06/2024</td>
+                                    <td data-label="DURAÇÃO">10 dias</td>
+                                    <td data-label="STATUS">
+                                        <div class="status"><span class="dot green"></span> Concluído</div>
+                                    </td>
+                                </tr>
+                                <tr id="step-4">
+                                    <td data-label="ETAPA"><span class="step-number">4</span></td>
+                                    <td data-label="ATIVIDADE DA OPERAÇÃO">
+                                        <div class="process-col c4"><i class="fa-solid fa-person-chalkboard"></i> TREINAMENTO DA<br>EQUIPE</div>
+                                    </td>
+                                    <td data-label="DESCRIÇÃO" class="desc-col">Capacitação dos usuários chaves e equipa operacional.</td>
+                                    <td data-label="INÍCIO" class="date-col">01/07/2024</td>
+                                    <td data-label="TÉRMINO" class="date-col">15/07/2024</td>
+                                    <td data-label="DURAÇÃO">10 dias</td>
+                                    <td data-label="STATUS">
+                                        <div class="status"><span class="dot blue"></span> Em andamento</div>
+                                    </td>
+                                </tr>
+                                <tr id="step-5">
+                                    <td data-label="ETAPA"><span class="step-number">5</span></td>
+                                    <td data-label="ATIVIDADE DA OPERAÇÃO">
+                                        <div class="process-col c5"><i class="fa-solid fa-rocket"></i> GO-LIVE<br>(OPERAÇÃO)</div>
+                                    </td>
+                                    <td data-label="DESCRIÇÃO" class="desc-col">Início da operação em ambiente real com suporte dedicado.</td>
+                                    <td data-label="INÍCIO" class="date-col">16/07/2024</td>
+                                    <td data-label="TÉRMINO" class="date-col">22/07/2024</td>
+                                    <td data-label="DURAÇÃO">5 dias</td>
+                                    <td data-label="STATUS">
+                                        <div class="status"><span class="dot blue"></span> Em andamento</div>
+                                    </td>
+                                </tr>
+                                <tr id="step-6">
+                                    <td data-label="ETAPA"><span class="step-number">6</span></td>
+                                    <td data-label="ATIVIDADE DA OPERAÇÃO">
+                                        <div class="process-col c6"><i class="fa-solid fa-chart-pie"></i> MONITORAMENTO<br>DE KPIs</div>
+                                    </td>
+                                    <td data-label="DESCRIÇÃO" class="desc-col">Acompanhamento diário dos indicadores de performance.</td>
+                                    <td data-label="INÍCIO" class="date-col">23/07/2024</td>
+                                    <td data-label="TÉRMINO" class="date-col">31/07/2024</td>
+                                    <td data-label="DURAÇÃO">7 dias</td>
+                                    <td data-label="STATUS">
+                                        <div class="status"><span class="dot grey"></span> Pendente</div>
+                                    </td>
+                                </tr>
+                                <tr id="step-7">
+                                    <td data-label="ETAPA"><span class="step-number">7</span></td>
+                                    <td data-label="ATIVIDADE DA OPERAÇÃO">
+                                        <div class="process-col c7"><i class="fa-solid fa-magnifying-glass-chart"></i> AUDITORIA E<br>AJUSTES</div>
+                                    </td>
+                                    <td data-label="DESCRIÇÃO" class="desc-col">Revisão de gargalos operacionais e aplicação de correções.</td>
+                                    <td data-label="INÍCIO" class="date-col">01/08/2024</td>
+                                    <td data-label="TÉRMINO" class="date-col">09/08/2024</td>
+                                    <td data-label="DURAÇÃO">7 dias</td>
+                                    <td data-label="STATUS">
+                                        <div class="status"><span class="dot grey"></span> Pendente</div>
+                                    </td>
+                                </tr>
+                                <tr id="step-8">
+                                    <td data-label="ETAPA"><span class="step-number">8</span></td>
+                                    <td data-label="ATIVIDADE DA OPERAÇÃO">
+                                        <div class="process-col c8"><i class="fa-solid fa-headset"></i> TRANSIÇÃO PARA<br>SUSTENTAÇÃO</div>
+                                    </td>
+                                    <td data-label="DESCRIÇÃO" class="desc-col">Passagem formal do projeto para o suporte contínuo.</td>
+                                    <td data-label="INÍCIO" class="date-col">12/08/2024</td>
+                                    <td data-label="TÉRMINO" class="date-col">23/08/2024</td>
+                                    <td data-label="DURAÇÃO">10 dias</td>
+                                    <td data-label="STATUS">
+                                        <div class="status"><span class="dot grey"></span> Pendente</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="right-column">
+
+                        <div class="calendar-container">
+                            <div class="calendar-header">
+                                <button id="prev-month"><i class="fa-solid fa-chevron-left"></i></button>
+                                <h3 id="month-year">Junho 2024</h3>
+                                <button id="next-month"><i class="fa-solid fa-chevron-right"></i></button>
+                            </div>
+                            <div class="calendar-body">
+                                <div class="calendar-days-name">
+                                    <span>Dom</span><span>Seg</span><span>Ter</span><span>Qua</span><span>Qui</span><span>Sex</span><span>Sáb</span>
+                                </div>
+                                <div class="calendar-days" id="calendar-days">
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div class="chart-container">
+                            <h3 class="chart-title">DURAÇÃO DAS ETAPAS (EM DIAS)</h3>
+
+                            <div class="css-chart">
+                                <div class="y-axis">
+                                    <span>12</span><span>10</span><span>8</span><span>6</span><span>4</span><span>2</span><span>0</span>
+                                </div>
+
+                                <div class="bar-group" data-highlight-step data-step="1">
+                                    <div class="bar bg1" style="height: 41%;" data-tooltip="Kick-off e Alinhamento">
+                                        <span class="bar-val">5</span>
+                                    </div><span class="bar-label">1</span>
+                                </div>
+                                <div class="bar-group" data-highlight-step data-step="2">
+                                    <div class="bar bg2" style="height: 41%;" data-tooltip="Mapeamento de Processos">
+                                        <span class="bar-val">5</span>
+                                    </div><span class="bar-label">2</span>
+                                </div>
+                                <div class="bar-group" data-highlight-step data-step="3">
+                                    <div class="bar bg3" style="height: 83%;" data-tooltip="Configuração de Sistemas">
+                                        <span class="bar-val">10</span>
+                                    </div><span class="bar-label">3</span>
+                                </div>
+                                <div class="bar-group" data-highlight-step data-step="4">
+                                    <div class="bar bg4" style="height: 83%;" data-tooltip="Treinamento da Equipe">
+                                        <span class="bar-val">10</span>
+                                    </div><span class="bar-label">4</span>
+                                </div>
+                                <div class="bar-group" data-highlight-step data-step="5">
+                                    <div class="bar bg5" style="height: 41%;" data-tooltip="Go-Live (Operação)">
+                                        <span class="bar-val">5</span>
+                                    </div><span class="bar-label">5</span>
+                                </div>
+                                <div class="bar-group" data-highlight-step data-step="6">
+                                    <div class="bar bg6" style="height: 58%;" data-tooltip="Monitoramento de KPIs">
+                                        <span class="bar-val">7</span>
+                                    </div><span class="bar-label">6</span>
+                                </div>
+                                <div class="bar-group" data-highlight-step data-step="7">
+                                    <div class="bar bg7" style="height: 58%;" data-tooltip="Auditoria e Ajustes">
+                                        <span class="bar-val">7</span>
+                                    </div><span class="bar-label">7</span>
+                                </div>
+                                <div class="bar-group" data-highlight-step data-step="8">
+                                    <div class="bar bg8" style="height: 83%;" data-tooltip="Transição para Sustentação">
+                                        <span class="bar-val">10</span>
+                                    </div><span class="bar-label">8</span>
+                                </div>
+                            </div>
+
+                            <div class="chart-footer">
+                                <div class="summary-box">
+                                    <i class="fa-regular fa-calendar-check"></i>
+                                    <div>
+                                        <h4>DURAÇÃO DO PROJETO:</h4>
+                                        <p>46 dias</p>
+                                    </div>
+                                </div>
+                                <div class="summary-box">
+                                    <i class="fa-solid fa-bullseye"></i>
+                                    <div>
+                                        <h4>FOCO DA OPERAÇÃO:</h4>
+                                        <p class="small-text">Escalabilidade e<br>Sucesso do Cliente</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-footer">
+                    <div class="info-card">
+                        <div class="info-header"><i class="fa-regular fa-clock"></i> TIMELINE</div>
+                        <div class="info-body highlight">03/06/2024 a 23/08/2024</div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-header"><i class="fa-solid fa-rocket"></i> OBJETIVO</div>
+                        <div class="info-body">Garantir a transição e execução eficiente da operação do cliente.</div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-header"><i class="fa-solid fa-chart-line"></i> BENEFÍCIOS AO CLIENTE</div>
+                        <div class="info-body">
+                            <ul>
+                                <li>Operação padronizada</li>
+                                <li>Visibilidade em tempo real</li>
+                                <li>Foco no core business</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-header"><i class="fa-solid fa-handshake-angle"></i> SLA DE ATENDIMENTO</div>
+                        <div class="info-body">
+                            <ul>
+                                <li>Disponibilidade (Uptime): 99,8%</li>
+                                <li>Resposta a Chamados: &lt; 4h</li>
+                                <li>Resolução Crítica: D+1</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
